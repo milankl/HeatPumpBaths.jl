@@ -226,6 +226,14 @@ md"""
 - Only 40 °C-equivalent flows of 5–10 L/min are used (the booklet's range). Lines therefore stop at
   their slow (right-hand) end, and small baths follow the fastest flow in the data even if the tap
   could run faster.
+- The booklet's run times are for a Vaillant aroTHERM plus **in spring**; the booklet states that
+  winter will be quicker. The tables are indexed by nominal heat pump size, but in cold weather a heat
+  pump heating water to 55–70 °C usually delivers less than its nominal output. The colder 10 °C mains
+  is in the tables, but treat winter results here as optimistic rather than conservative.
+- An **electric back-up heater** (e.g. 2–6 kW alongside the heat pump) can be approximated by adding
+  its power to the heat pump size, e.g. 5 + 2 kW as 7 kW. Treat this as an upper bound: the extra heat
+  still has to pass through the store's coil, odd sizes are interpolated between the booklet's even-kW
+  tables, and that heat costs about three times as much as the heat pump's.
 """
 
 # ╔═╡ a1f0c3d2-6e4b-4c8a-9f21-3b5d7e9a0c11
